@@ -25,7 +25,7 @@ const ShareComponent = () => {
   ];
 
   return (
-    <div className='bg-white w-full h-screen relative'>
+    <div className='bg-white w-full h-screen relative mt-16'>
       <div className='w-full'>
         <div className='w-screen max-w-full h-[331px] bg-[#003399] rounded-b-[32px]'>{/* Add your content here */}</div>
       </div>
@@ -41,9 +41,11 @@ const ShareComponent = () => {
                 </svg>
                 <div className='text-center text-lg font-bold text-gray-700 group-hover:text-[#003399]'>{item.text}</div>
                 <div
-                  className={`mt-2 w-[152px] h-[268px] bg-gray-100 rounded-lg shadow-md flex flex-col items-center justify-between p-4 ${item.letter === 'H' || item.letter === 'R' ? 'group-hover:bg-blue-500' : 'group-hover:bg-yellow-500'}`}
+                  className={`mt-2 w-[152px] h-[268px] bg-gray-100 rounded-lg shadow-md flex flex-col items-center justify-between p-4 ${
+                    item.letter === 'H' || item.letter === 'R' ? 'group-hover:bg-[#003399]' : 'group-hover:bg-yellow-500'
+                  }`}
                 >
-                  <p className={`text-xs text-gray-500 ${item.letter === 'H' || item.letter === 'R' ? 'group-hover:text-white' : 'group-hover:text-[#003399] '}`}>{item.cardText}</p>
+                  <p className={`text-xs text-gray-800 ${item.letter === 'H' || item.letter === 'R' ? 'group-hover:text-gray-300' : 'group-hover:text-[#003399] '}`}>{item.cardText}</p>
                   <Image src={item.logo} alt={item.cardText} width={102} height={116} className='filter grayscale group-hover:filter-none group-hover:fill-red-500' />
                 </div>
               </div>

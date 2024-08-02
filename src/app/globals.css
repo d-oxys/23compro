@@ -6,3 +6,15 @@
 .text-stroke {
   -webkit-text-stroke: 1px #003399; /* Adjust the stroke width and color as needed */
 }
+
+/* Hide horizontal scrollbar for all browsers */
+body {
+  overflow-x: hidden;
+  overflow-y: auto; /* Ensure vertical scrolling is enabled */
+}
+
+/* Optional: Hide horizontal scrollbar for specific elements */
+.no-scrollbar {
+  overflow-x: hidden;
+  overflow-y: auto; /* Ensure vertical scrolling is enabled */
+}
