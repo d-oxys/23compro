@@ -2,19 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-/* styles/globals.css */
 .text-stroke {
-  -webkit-text-stroke: 1px #003399; /* Adjust the stroke width and color as needed */
+  -webkit-text-stroke: 1px #003399;
 }
 
-/* Hide horizontal scrollbar for all browsers */
 body {
   overflow-x: hidden;
-  overflow-y: auto; /* Ensure vertical scrolling is enabled */
+  overflow-y: auto;
 }
 
-/* Optional: Hide horizontal scrollbar for specific elements */
 .no-scrollbar {
   overflow-x: hidden;
-  overflow-y: auto; /* Ensure vertical scrolling is enabled */
+  overflow-y: auto;
+}
+
+.custom-loader {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: conic-gradient(#fff 10%, #d61f3b);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: s3 0.5s infinite linear;
+  -webkit-animation: s3 0.5s infinite linear;
+}
+
+@keyframes s3 {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.articleHeroSlide {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  overflow-y: visible;
+}
+
+.articleHeroSlide__slide {
+  width: 100%;
+  position: relative;
+  overflow: visible;
 }

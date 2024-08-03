@@ -4,8 +4,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import Dialog from './dialog';
-import { RiMailAddLine } from 'react-icons/ri';
+import { RiInstagramLine, RiLinkedinBoxLine, RiMailAddLine, RiMapPinLine } from 'react-icons/ri';
 import { ErrorMessage, SuccessMessage } from './message';
+import { FaTiktok } from 'react-icons/fa';
 
 export default function Footer() {
   const [close, setClose] = useState(true);
@@ -127,36 +128,33 @@ export default function Footer() {
 
         <div className='mt-6'>{statusMessage ? statusMessage === 'Pesan berhasil dikirim' ? <SuccessMessage title={statusMessage} /> : <ErrorMessage title={statusMessage} /> : ''}</div>
       </Dialog>
-      <footer className='bg-primary text-white'>
-        <div className='mx-auto flex max-w-6xl flex-col justify-between gap-8 px-4 py-6 md:flex-row'>
+      <footer className='bg-[#003399] text-white mt-1'>
+        <div className='mx-auto flex max-w-7xl flex-col justify-between gap-8 px-4 py-6 md:flex-row'>
           <div>
-            <Image src={'/logo-white.svg'} width={50} height={100} alt='Logo Kasa News' />
-            <p className='mt-6 max-w-sm'>
-              Untuk pertanyaan lebih lanjut, silahkan hubungi
-              <span onClick={handleClose} className='mx-2 cursor-pointer font-bold underline'>
-                admin
-              </span>
-              di sini.
-            </p>
+            <h1 className='text-3xl text-[#FFC700] font-semibold'>PT DUA PULUH TIGA</h1>
+            <div className='flex items-center'>
+              <RiMapPinLine className='text-[#FFC700] mr-2 w-[30px] h-[38px]' />
+              <div className='mt-6 max-w-md flex items-center'>
+                <p>Jl. Kopo Bihbul Raya No.68, Sayati, Kec. Margahayu, Kabupaten Bandung, Jawa Barat, Indonesia 40228</p>
+              </div>
+            </div>
           </div>
-          <div>
-            <h1 className='mb-3 text-2xl font-bold'>Kasa News</h1>
-            <ul className='flex flex-col gap-3'>
-              <li>
-                <Link href={'/'}>Beranda</Link>
-              </li>
-              <li>
-                <Link href={'/artikels'}>Artikel</Link>
-              </li>
-              <li>
-                <Link href={'/tentang'}>Tentang</Link>
-              </li>
-            </ul>
+          <div className=''>
+            <h1 className='text-xl text-[#FFC700] font-semibold'>Get in Touch with us</h1>
+            <div className='flex mt-6'>
+              <input type='text' className='text-black border border-gray-300 py-1 px-16 rounded-full mr-2 focus:outline-none focus:border-transparent' />
+              <button className='bg-transparent border-2 border-[#FFC700] text-[#FFC700] py-1 px-8 rounded-full  hover:text-white hover:border-white'>Send</button>
+            </div>
+            <div className='flex mt-4 space-x-2'>
+              <RiInstagramLine className='text-white w-5 h-5' />
+              <FaTiktok className='text-white w-5 h-5' />
+              <RiLinkedinBoxLine className='text-white w-5 h-5' />
+            </div>
           </div>
         </div>
-        <div className='mx-auto max-w-6xl text-center'>
+        <div className='mx-auto max-w-7xl text-center'>
           <div className='h-[1px] w-full bg-white'></div>
-          <p className='mt-6 pb-5'>© 2023 Kasa News. All rights reserved.</p>
+          <p className='mt-6 pb-5'>© 2024 PT Dua Puluh Tiga. All Rights Reserved</p>
         </div>
       </footer>
     </div>
