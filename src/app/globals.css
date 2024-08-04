@@ -32,6 +32,26 @@ body {
   }
 }
 
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee 10s linear infinite;
+}
+
 .articleHeroSlide {
   display: flex;
   justify-content: center;

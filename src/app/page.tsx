@@ -1,4 +1,4 @@
-import OurOffice from '@/components/ourOffice';
+import OurOffice from '@/components/ourOffice/';
 import HeroSection from '@/components/hero';
 import MeetOur from '@/components/meetOur';
 import TopBar from '@/components/navbar';
