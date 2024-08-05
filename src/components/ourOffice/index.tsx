@@ -10,7 +10,6 @@ const OurOffice = () => {
       <RelaxingRoom />
       <WorkSpace />
       <OurActivity />
-      <h1 className='text-center text-4xl text-[#003399] mt-24 font-bold'>OUR BRAND</h1>
     </div>
   );
 };

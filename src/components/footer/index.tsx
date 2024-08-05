@@ -84,7 +84,7 @@ export default function Footer() {
     }
   };
   return (
-    <div className='w-full'>
+    <div className='w-screen'>
       <Dialog
         title='Hubungi Kami'
         subtitle='Beri kami tanggapan Anda dan bantu kami meningkatkan layanan kami'
@@ -142,8 +142,8 @@ export default function Footer() {
           <div className=''>
             <h1 className='text-xl text-[#FFC700] font-semibold'>Get in Touch with us</h1>
             <div className='flex mt-6'>
-              <input type='text' className='text-black border border-gray-300 py-1 px-16 rounded-full mr-2 focus:outline-none focus:border-transparent' />
-              <button className='bg-transparent border-2 border-[#FFC700] text-[#FFC700] py-1 px-8 rounded-full  hover:text-white hover:border-white'>Send</button>
+              <input type='text' className='text-black border border-gray-300 py-1 px-8 md:px-16 rounded-full mr-2 focus:outline-none focus:border-transparent' />
+              <button className='bg-transparent border-2 border-[#FFC700] text-[#FFC700] py-1 px-4 md:px-8 rounded-full  hover:text-white hover:border-white'>Send</button>
             </div>
             <div className='flex mt-4 space-x-2'>
               <RiInstagramLine className='text-white w-5 h-5' />

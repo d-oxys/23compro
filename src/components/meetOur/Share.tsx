@@ -16,7 +16,7 @@ const ShareGoodness = () => {
           </p>
         </div>
         <div className='w-[60%] justify-start flex'>
-          <Image src={hero} alt='Hero Image 2' width={625} height={625} />
+          <Image src={hero} alt='Hero Image 2' width={600} height={600} />
         </div>
       </div>
     </div>

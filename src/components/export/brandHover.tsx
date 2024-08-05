@@ -18,32 +18,14 @@ const ExportBody = () => {
   return (
     <>
       <div className='w-screen'>
-        {/* <div className='flex'>
-          <div className='w-1/2' onMouseEnter={() => setImageSrc1(hoverg17)} onMouseLeave={() => setImageSrc1(g17)}>
+        <div className='md:flex block'>
+          <div className='md:h-full md:w-1/2' onMouseEnter={() => setImageSrc1(hoverg17)} onMouseLeave={() => setImageSrc1(g17)}>
             <Image src={imageSrc1} alt='Hero Image 1' layout='responsive' width={500} height={500} className='transition duration-500 ease-in-out' />
           </div>
-          <div className='w-1/2' onMouseEnter={() => setImageSrc2(hoverg18)} onMouseLeave={() => setImageSrc2(g18)}>
+          <div className='md:h-full md:w-1/2' onMouseEnter={() => setImageSrc2(hoverg18)} onMouseLeave={() => setImageSrc2(g18)}>
             <Image src={imageSrc2} alt='Hero Image 2' layout='responsive' width={500} height={500} className='transition duration-500 ease-in-out' />
           </div>
-        </div> */}
-        <div className=''>
-          <Image src={frameG} alt='Hero Image 2' layout='responsive' width={500} height={500} />
         </div>
-        <div className=''>
-          <Image src={frame181} alt='Hero Image 2' layout='responsive' width={500} height={500} />
-        </div>
-        <div className=''>
-          <Image src={frame184} alt='Hero Image 2' layout='responsive' width={500} height={500} />
-        </div>
-        <div className=''>
-          <Image src={frame170} alt='Hero Image 2' layout='responsive' width={500} height={500} />
-        </div>
-        <div className=''>
-          <Image src={frame163} alt='Hero Image 2' layout='responsive' width={500} height={500} />
-        </div>
-      </div>
-      <div className='mx-8 mt-2'>
-        <Image src={heroline} alt='Hero Image 2' layout='responsive' width={500} height={500} />
       </div>
     </>
   );

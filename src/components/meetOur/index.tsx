@@ -6,6 +6,7 @@ import VisiMisi from './visiMisi';
 import CompanyTagline from './tagline';
 import SeekExcellence from './seekExcellent';
 import ShareGoodness from './Share';
+import Office from '../ourOffice';
 
 const CompanyProfile = () => {
   return (
@@ -16,6 +17,7 @@ const CompanyProfile = () => {
       <CompanyTagline />
       <SeekExcellence />
       <ShareGoodness />
+      <Office />
     </div>
   );
 };
