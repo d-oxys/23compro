@@ -5,7 +5,7 @@ import milestone from '../../../public/Screen Shot 2024-02-16 at 08.13 1.png';
 const Milestone = () => {
   return (
     <div className='w-screen h-full bg-[#F2F1F0] md:pt-16 pt-16'>
-      <h1 className='text-4xl md:text-start text-center font-black text-[#003399] ml-4 mb-4 md:ml-16'>The Milestone</h1>
+      <h1 className='text-3xl md:text-4xl md:text-start text-center font-black text-[#003399] ml-4 mb-4 md:ml-20'>The Milestone</h1>
       <div className='flex flex-col md:flex-row justify-start mx-4 md:w-[80%]'>
         <div className='w-full md:w-1/2 md:ml-16 md:mr-4'>
           <p className='text-justify text-xs md:text-sm font-normal text-[#003399]'>

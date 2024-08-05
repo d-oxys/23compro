@@ -58,7 +58,7 @@ const ShareComponent = () => {
         </div>
         <div className='absolute w-[90%] md:w-[977px] h-full md:h-[498px] my-8 bg-white rounded-[28px] shadow-xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
           <div className='flex justify-center items-center h-full'>
-            <div className='flex flex-wrap md:flex-nowrap h-full space-x-0 md:space-x-4 mt-0 md:mt-8' data-aos='fade-up'>
+            <div className='flex flex-wrap justify-center md:flex-nowrap h-full space-x-0 md:space-x-4 mt-0 md:mt-8' data-aos='fade-up'>
               {isClient &&
                 letters.map((item, index) => (
                   <div key={index} className='p-2 mx-auto cursor-pointer flex flex-col w-1/3 md:w-full items-center group'>

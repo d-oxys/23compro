@@ -131,11 +131,11 @@ export default function Footer() {
       <footer className='bg-[#003399] text-white mt-1'>
         <div className='mx-auto flex max-w-7xl flex-col justify-between gap-8 px-4 py-6 md:flex-row'>
           <div>
-            <h1 className='text-3xl text-[#FFC700] font-semibold'>PT DUA PULUH TIGA</h1>
+            <h1 className='text-2xl md:text-3xl text-[#FFC700] font-semibold'>PT DUA PULUH TIGA</h1>
             <div className='flex items-center'>
               <RiMapPinLine className='text-[#FFC700] mr-2 w-[30px] h-[38px]' />
               <div className='mt-6 max-w-md flex items-center'>
-                <p>Jl. Kopo Bihbul Raya No.68, Sayati, Kec. Margahayu, Kabupaten Bandung, Jawa Barat, Indonesia 40228</p>
+                <p className='text-xs md:text-base'>Jl. Kopo Bihbul Raya No.68, Sayati, Kec. Margahayu, Kabupaten Bandung, Jawa Barat, Indonesia 40228</p>
               </div>
             </div>
           </div>
@@ -154,7 +154,7 @@ export default function Footer() {
         </div>
         <div className='mx-auto max-w-7xl text-center'>
           <div className='h-[1px] w-full bg-white'></div>
-          <p className='mt-6 pb-5'>© 2024 PT Dua Puluh Tiga. All Rights Reserved</p>
+          <p className='mt-6 pb-5 text-xs md:text-base'>© 2024 PT Dua Puluh Tiga. All Rights Reserved</p>
         </div>
       </footer>
     </div>

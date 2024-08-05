@@ -41,6 +41,10 @@ body {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .marquee {
   display: flex;
   white-space: nowrap;

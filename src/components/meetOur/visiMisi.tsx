@@ -7,10 +7,10 @@ import yellowbar from '../../../public/huruf/yellow.svg';
 
 const VisiMisi = () => {
   return (
-    <div className='w-screen h-full md:pt-16 pt-8 mt-8 bg-red-800'>
+    <div className='w-screen h-full md:pt-16 pt-8 mt-8 overflow-hidden'>
       <div className='flex flex-col md:flex-row justify-center'>
         <div className='w-full md:w-[40%]'>
-          <h1 className='text-4xl font-black text-[#003399] mb-8 md:mb-16 md:ml-16 mx-4'>
+          <h1 className='text-3xl md:text-4xl font-black text-[#003399] mb-8 md:mb-16 md:ml-16 mx-4 text-center md:text-start'>
             Vision <span className='md:block inline'> and Mision</span>
           </h1>
           <div className='hidden md:flex justify-start flex-col space-y-1 my-8'>

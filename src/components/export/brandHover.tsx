@@ -5,12 +5,6 @@ import g17 from '../../../public/group/Component 9.png';
 import g18 from '../../../public/group/Component 10.png';
 import hoverg17 from '../../../public/hero/Component 17.png';
 import hoverg18 from '../../../public/hero/Component 18.png';
-import frameG from '../../../public/group/Frame 6.png';
-import frame181 from '../../../public/group/Frame 181.png';
-import frame184 from '../../../public/group/Frame 184.png';
-import frame170 from '../../../public/group/Frame 170.svg';
-import frame163 from '../../../public/group/Frame 63.svg';
-import heroline from '../../../public/hero/Group 338.png';
 
 const ExportBody = () => {
   const [imageSrc1, setImageSrc1] = useState(g17);
